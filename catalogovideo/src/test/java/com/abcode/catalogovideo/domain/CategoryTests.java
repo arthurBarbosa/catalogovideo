@@ -11,6 +11,6 @@ public class CategoryTests {
 
     @Test
     public void instantiate(){
-
+        final Category entity = new Category();
     }
 }
