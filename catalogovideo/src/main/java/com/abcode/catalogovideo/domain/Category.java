@@ -7,7 +7,7 @@ public class Category {
     private UUID id;
     private String name;
     private String description;
-    private Boolean isActive;
+    private Boolean isActive = true;
 
     public UUID getId() {
         return id;
@@ -44,7 +44,11 @@ public class Category {
         return isActive;
     }
 
-    public void setActive(Boolean active) {
-        isActive = active;
+    public Boolean active() {
+        return this.isActive = true;
+    }
+
+    public Boolean deactivate() {
+        return this.isActive = false;
     }
 }
